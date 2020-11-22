@@ -1,0 +1,24 @@
+.carousel{
+    margin-top: 20px;
+}
+
+.carousel-inner{
+    margin-bottom: 20px;
+}
+.bg-light{
+    background-color: red!important;
+}
+.carouselExampleControls{
+    width: 100%!important;
+    height: 30%!important;
+}
+.w-100{
+    object-fit: none:
+}
+.col-10{
+    float: left;
+}
+.row-footer{
+    background-color: black!important;
+    height: 100px;
+}
