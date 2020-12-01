@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script>
 <!-- 
     <script>
         // let hello = "Hello Frend";
@@ -22,10 +22,41 @@
             alert("Ok arow");
         }
         showHello(); -->
-
-    </script>
+        
+    <!-- </script> -->
+    
 </head>
 <body>
-    <h1>aaaa</h1>
+    <label>Value1</label>
+    <input type="text" id="Input1" readonly="readonly">
+    <br />
+    <br />
+    <label>Value2</label>
+    <input type="text" id="myInput2">
+    <br />
+    <br />
+    <button type="button" onclick="getInputValue();">Submit</button>
+    
+    <script>
+        function getInputValue(){
+            let inputVal = document.getElementById("myInput2").value;
+            /* dùng để lấy value của input 2 */
+            let sokitu = inputVal.length;
+            // dùng để lấy tổng ký tự khi nhập vào trong input2
+            if(sokitu > 10){
+                alert("ban nhap nhieu qua");
+            }else{
+                alert("ok");
+            }
+            let value = document.getElementById("Input1").value = document.getElementById("myInput2").value;
+            // gán value 1 bằng value 2
+            let tong = value.length;
+            if(tong > 10){
+                alert("Ban nhap sai roi");
+            }else{
+                alert("dung roi");
+            }
+        }
+    </script>
 </body>
 </html>
