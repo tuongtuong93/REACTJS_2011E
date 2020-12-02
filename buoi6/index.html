@@ -6,22 +6,29 @@
     <title>Document</title>
 </head>
 <body>
+    <label for="">Nhập số cần kiểm tra</label><br /><br />
+    <input type="text" id="number">
+    <button id="submit" onclick="getInputValue();">submit</button>
+
+
     <script>
-        var number = prompt("Nhập số cần kiểm tra");
-    
-        switch (number){
-            case '1' : 
-                window.open("https://quantrimang.com/");
-                break;
-            case '2' : 
-                window.open("https://download.com.vn/");
-                break;
-            case '3' : 
-                window.open("https://vndoc.com/");
-                break;
-            default :
-                window.open("https://meta.vn/");
-        break;
+        function getInputValue(){
+            let number = document.getElementById("number").value;
+            // var number = prompt("Nhập số cần kiểm tra");
+            switch (number){
+                case '1' : 
+                    window.open("https://quantrimang.com/");
+                    break;
+                case '2' : 
+                    window.open("https://download.com.vn/");
+                    break;
+                case '3' : 
+                    window.open("https://vndoc.com/");
+                    break;
+                default :
+                    window.open("https://meta.vn/");
+            break;
+            }
         }
     </script>
 </body>
