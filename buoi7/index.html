@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>fruits</h1>
+        <label for="">Nhập số cần kiểm tra</label><br /><br />
+        <input type="text" id="number" name="number_name" class="number"><br /><br />
+        
+         <!-- vi du ve index thu 2 -->
+        <!-- <input type="text" name="number_name" class="number"><br /><br /> -->
+        
+        <button id="buttom" type="submit" onclick="number();">submit</button>
+
+        <p id="innerHtml">Xin chao</p>
+    <script>
+        number = () => {
+            // DOM ELEMENT
+
+            // Id la duy nhat len k can chi so [0]
+            let idValue = document.getElementById('number').value;
+            let nameValue = document.getElementsByName('number_name')[0].value;
+            // [0] name va class co nhieu phai tro den index cua no
+            // let classValue = document.getElementsByClassName('number')[1].value;
+            // console.log(classValue);
+
+            // DOM HTML
+            let inputHtml = document.getElementById('innerHtml').innerHTML = idValue;
+
+
+            // let inputHtml = document.getElementById('innerHtml').innerHTML = 'aaaaaaaaaaaaaaa';
+            
+            // DOM css
+            document.getElementById("number").style.backgroundColor = 'red';
+        }  
+
+        buttom = () => {
+
+        }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h1>Hello</h1>
+
+    <button onclick="myFunction()">Submit</button>
+
+    <script>
+        // Bai 1
+    const numbers = [5, 10, 15, 20, 25, 50, 100];
+    total = () => {
+    if(!Array.isArray(numbers)) return;
+    let sum=0;
+    numbers.forEach(each => {
+        sum+=each;
+    });
+    return sum;
+    };
+    console.log(total(numbers));    
+
+    // bai 2
+    function myFunction() {
+    let x = document.getElementsByTagName("h1")[0];
+    x.outerHTML = "<h2 id=\"color\">Hello2</h2>";
+    document.getElementById('color').style.color = 'red';
+    }
+    
+    </script>
+</body>
+</html>
