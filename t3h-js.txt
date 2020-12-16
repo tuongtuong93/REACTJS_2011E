@@ -1,0 +1,24 @@
+https://developer.mozilla.org/     javascrip es6
+http://es6-features.org/
+
+
+
+callback ---- callback hell
+promise
+Async/Await
+
+
+phuong thuc cua trinh duyet
+	[
+	+ Get: 		ghép thông tin
+	+ Post: 	thêm dữ liệu, lấy thông tin
+	+ Put/ Path:	update
+	+ Delete:	xóa
+	]
+
+API =>  
+
+raw => JSON
+
+request
+call Api
